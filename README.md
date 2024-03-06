@@ -1,6 +1,51 @@
 # Spring Boot Web Application
 
 
+                                   +-------------------------------------+
+                                   |                                     |
+                                   |          User Browser               |
+                                   |                                     |
+                                   +-------------+-----------------------+
+                                                 |
+                                                 | HTTP Requests
+                                                 |
+                                   +-------------v-----------------------+
+                                   |                                     |
+                                   |         Spring Boot API             |
+                                   |    (JWT-based Authentication,      |
+                                   |       Role-based Authorization)    |
+                                   |                                     |
+                                   +-------------+-----------------------+
+                                                 |
+                                                 | Infrastructure Setup
+                                                 |
+                                   +-------------v-----------------------+
+                                   |                                     |
+                                   |           Terraform                |
+                                   |   (Infrastructure as Code - IaC)   |
+                                   |                                     |
+                                   +-------------+-----------------------+
+                                                 |
+                                                 | CI/CD Pipeline
+                                                 |
+                                   +-------------v-----------------------+
+                                   |                                     |
+                                   |          Git Repository            |
+                                   |    (Git Workflows,                 |
+                                   |     CI/CD Integration)             |
+                                   |                                     |
+                                   +-------------+-----------------------+
+                                                 |
+                                                 | Deployment
+                                                 |
+                                   +-------------v-----------------------+
+                                   |                                     |
+                                   |          AWS Services               |
+                                   |   (RDS, SES, CloudWatch, etc.)     |
+                                   |                                     |
+                                   +-------------------------------------+
+
+
 ## Description
 
 This Spring Boot web application provides functionality for managing assignments. It allows authenticated users to perform operations such as creating, retrieving, updating, and deleting assignments. Additionally, it offers a public health check API endpoint.
